@@ -1,0 +1,10 @@
+@set /p UserInput=Quel numero pour le fichier ?
+@echo + Positifs >> "point - jour - %UserInput%.txt"
+@for /l %%x in (1, 1, 10) do @echo %%x-  >> "point - jour - %UserInput%.txt"
+@echo. >> "point - jour - %UserInput%.txt"
+@echo + Axes d'améliorations >> "point - jour - %UserInput%.txt"
+@for /l %%x in (1, 1, 10) do @echo %%x-  >> "point - jour - %UserInput%.txt"
+@echo. >> "point - jour - %UserInput%.txt"
+@echo + Remarques >> "point - jour - %UserInput%.txt"
+@for /l %%x in (1, 1, 10) do @echo %%x-  >> "point - jour - %UserInput%.txt"
+@start "" "point - jour - %UserInput%.txt"
